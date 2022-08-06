@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatur JS</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <form name="calc">
+            <div class="header">
+                <h3>My Calculator</h3>
+                <input name="val" type="text" placeholder="0" readonly>
+            </div>
+            <div class="body">
+                <input type="button" id="clearall" value="AC" onclick="clearAll()">
+                <input type="button" value="&divide;" onclick="document.calc.val.value+='/'">
+                <input type="button" id="clearone" value="&larr;" onclick="clearOne()">
+                <input type="button" value="9" onclick="document.calc.val.value+='9'">
+                <input type="button" value="8" onclick="document.calc.val.value+='8'">
+                <input type="button" value="7" onclick="document.calc.val.value+='7'">
+                <input type="button" value="&times" onclick="document.calc.val.value+='*'">
+                <input type="button" value="6" onclick="document.calc.val.value+='6'">
+                <input type="button" value="5" onclick="document.calc.val.value+='5'">
+                <input type="button" value="4" onclick="document.calc.val.value+='4'">
+                <input type="button" value="+" onclick="document.calc.val.value+='+'">
+                <input type="button" value="3" onclick="document.calc.val.value+='3'">
+                <input type="button" value="2" onclick="document.calc.val.value+='2'">
+                <input type="button" value="1" onclick="document.calc.val.value+='1'">
+                <input type="button" value="-" onclick="document.calc.val.value+='-'">
+                <input type="button" value="0" onclick="document.calc.val.value+='0'">
+                <input type="button" value="." onclick="document.calc.val.value+='.'">
+                <input type="button" id="equal" value="=" onclick="result()">
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
